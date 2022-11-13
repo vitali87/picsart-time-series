@@ -70,7 +70,6 @@ lstm_model = RNNModel(
     training_length=20,
     input_chunk_length=CHUNK_LENGTH,
     force_reset=True,
-    save_checkpoints=True,
 )
 lstm_model.fit(train_transformed)
 lstm_forecast = lstm_model.predict(HORIZON)
